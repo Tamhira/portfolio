@@ -1,0 +1,269 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* ------------------------------------- */
+
+/* CSS Variables */
+:root{
+    background-color: black;
+}
+/* ------------------------------------- */
+
+/* Navigation Bar */
+#navbar{
+    color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px ;
+    z-index: 100;
+    font-size: 18px;
+}
+/* Navigation Name*/
+#logo{
+    margin: 20px 50px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+#logo:hover{
+    color: rgb(211, 181, 15);
+}
+#navbar::before{
+    content: "";
+    background-color:rgba(0, 0, 0, 0.464);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    /* opacity: 0.4; */
+}
+/* Navigation Bar List Styling */
+#navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 35px; /* Add some right margin for spacing */
+    width: 80%; /* Ensure the list takes up the full width */
+    padding-right: 0; /* Remove any default padding */
+}
+#navbar ul li{
+    list-style: none;
+    padding: 20PX;
+    font-size: 14px;
+    /* color: white; */
+}
+#navbar ul li a{
+    text-decoration: none;
+    color: white;
+} 
+#navbar ul li a:hover{
+    font-size: 19px;
+    transform: scale(1.2);
+    color: rgb(211, 181, 15);
+    cursor: pointer;
+}
+/* ------------------------------------- */
+
+/* HOME SECTION */
+.Intro{
+    font-size: 45px;
+    color: rgb(211, 181, 15);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 5px 250px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    margin: 120px auto;
+    padding: 100px;
+    color: white;
+    font-size: 20px;
+}
+#home::before{
+    content: "";
+    background: url(portfoliobg.jpg);
+    background-size: cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -2;
+}
+#home p{
+    text-align: center;
+}
+/* ------------------------------------- */
+
+/* ABOUT SECTION */
+#about .h-primary1{
+    margin-top: 300px;
+    @media screen and (max-width:1250px) and (min-width:1001px){
+        margin: auto;
+    }
+}
+#about p{
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+/* ------------------------------------- */
+
+/* PROJECT SECTION*/
+#projects{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+}
+#projects .box{ 
+    padding: 30px;
+    margin: 5px 25px;
+    border-radius: 28px;
+    background: #f1edede5;
+    margin-bottom: 20px;
+}
+#projects .box img{ 
+    height: 200px;
+    margin: auto;
+    display: block;
+ }
+
+#projects .box:hover{
+    transform: scale(1.1);
+}
+
+.h-primary1{
+    text-align: center;
+    color:rgb(211, 181, 15);
+    margin: 40px;
+    padding: 10px 10px 10px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    margin-top: 50px;
+}
+.h-secondary{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+}
+.h-secondary a{
+    text-decoration: none;
+    color: black;
+}
+.h-secondary a:hover{
+    cursor: pointer;
+    color: rgb(30, 8, 131);
+}
+/* ------------------------------------- */
+
+/* MORE SECTION */
+#more{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+}
+/* #more .box {
+    height: 200px;
+    width: 30%;
+    font-size: 20px;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 28px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+} */
+#more .box{ 
+    /* height: 280px; */
+    height: auto;
+    width: 30%;
+    font-size: 20px;
+    padding: 30px;
+    margin: 5px 25px;
+    border-radius: 28px;
+    background: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    text-align: center;
+}
+#more .box .h-secondary{
+    color: rgb(211, 181, 15);
+}
+/* ------------------------------------- */
+
+/* CONTACT SECTION */
+#contact-box{
+    margin: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 95%;
+}
+#contact p{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+#contact-box .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 100px;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    width: 30%;
+}
+#contact-box .box a{
+    text-decoration: none;
+    color: white;
+}
+#contact-box .box a:hover{
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(211, 181, 15);
+}
+#contact-box .box a{
+    text-decoration: none;
+    color: white;
+}
+#contact-box img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; 
+}
+#contact-box .box:nth-child(1) img {
+    filter: invert(1);
+}
+/* ------------------------------------- */
+
+/* FOOTER SECTION */
+footer{
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: bold;
+}
+
+/* CONTACT SECTION */
+
