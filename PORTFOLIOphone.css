@@ -74,12 +74,16 @@
     flex-direction: column;
 }
 #projects .box{
+    border-radius: 20px;
     padding: 15px 0px 5px 0px;
-    margin: 0px 15%;
+    margin: 0px;
     margin-bottom: 30px;
     /* background: none; */
     @media screen and (max-width:300px) {
         margin: 5px 0px;
+    }
+    @media screen and (min-width:700px) and (max-width:999px) {
+        margin: 10px 25%;
     }
 }
 #projects .box img{ 
