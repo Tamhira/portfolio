@@ -127,25 +127,38 @@ html{
 /* ------------------------------------- */
 
 /* PROJECT SECTION*/
+#project-container{
+    position: relative;
+}
 #projects{
-    margin: 35px;
+    /* margin: 35px; */
     display: flex;
     justify-content: center;
+    align-items: center;
 }
-#projects .box{ 
-    padding: 30px;
-    margin: 5px 25px;
-    border-radius: 28px;
+#projects .project-item{ 
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
     background: #f1edede5;
     margin-bottom: 20px;
 }
-#projects .box img{ 
-    height: 200px;
+#projects .project-item img{ 
+    width: 450px;
+    height: 250px;
     margin: auto;
     display: block;
  }
-
-#projects .box:hover{
+ .project-item{
+    padding: 40px;
+}
+#projects .project-item a{
+    color: black;
+}
+#projects img{
+    height: 200px;
+}
+#projects .project-item:hover{
     transform: scale(1.1);
 }
 
@@ -210,13 +223,16 @@ html{
 /* ------------------------------------- */
 
 /* CONTACT SECTION */
+#contact{
+    position: relative;
+}
 #contact-box{
-    margin: 35px;
+    /* margin: 35px; */
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
-    width: 95%;
+    /* margin-top: 20px;
+    width: 95%; */
 }
 #contact p{
     color: white;
@@ -228,10 +244,19 @@ html{
     flex-direction: column;
     align-items: center;
     margin: 0 100px;
+    width: 33%;
+    padding: 15px;
+    margin: 15px;
+    margin-bottom: 20px;
     color: white;
-    text-align: center;
     font-size: 25px;
-    width: 30%;
+}
+#contact-box .box img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px; 
+    margin: auto;
+    display: block;
 }
 #contact-box .box a{
     text-decoration: none;
@@ -241,15 +266,6 @@ html{
     font-size: 30px;
     cursor: pointer;
     color: rgb(211, 181, 15);
-}
-#contact-box .box a{
-    text-decoration: none;
-    color: white;
-}
-#contact-box img{
-    width: 60px;
-    height: 60px;
-    margin-bottom: 10px; 
 }
 #contact-box .box:nth-child(1) img {
     filter: invert(1);
@@ -264,6 +280,3 @@ footer{
     text-align: center;
     font-size: bold;
 }
-
-/* CONTACT SECTION */
-
